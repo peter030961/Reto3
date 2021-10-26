@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>Reto3 version 1.1.6</title>
+</head>
+<body>
+<style>
+    div.texto1 {
+        text-align: center;
+    }
+</style>
+    
+<div class="texto1"
+        <h1>Mision TIC 2022         Grupo G-38</h1>
+        <h2> Reto 3  !  F I N C A S !     </h2>
+</div>
+    
+<h1> Categorias</h1>
+<div id="resultado1"></div>
+<button onclick="traerInformacionCategorias()" > Consultar Categorias</button>
+    <div>
+        <input type="text" id="Cname" placeholder="nombre">
+        <input type="text" id="Cdescription" placeholder="descripcion">
+    </div>
+<button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+    
+<h1>Fincas</h1>
+<div id="resultado2"></div>
+<button onclick="traerInformacionFarm()" >Consultar Fincas</button>
+    <div>
+        <input type="text" id="Fname" placeholder="name">
+        <input type="text" id="Faddress" placeholder="address">
+        <input type="number" id="Fextension" placeholder="extension">
+        <input type="text" id="Fdescription" placeholder="description">
+        <input type="text" id="Fcategoryid" placeholder="Categoria">
+    </div>
+<button onclick="guardarInformacionFarm()">Guardar Fincas</button>
+
+<h1>Clientes</h1>
+<div id="resultado3"></div>
+<button onclick="traerInformacionClientes()" > Consultar Clientes</button>
+    <div>
+        <input type="email"    id="CLemail" placeholder="email">
+        <input type="password" id="CLpassword" placeholder="password">
+        <input type="text"     id="CLname" placeholder="nombre">
+        <input type="number"   id="CLage" placeholder="edad">  
+    </div>
+<button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+
+<h1>Reservas</h1>
+<div id="resultado4"></div>
+<button onclick="traerInformacionReservas()" > Consultar Reservas</button>
+    <div>
+        <input type="Date"   id="RstartDate"      placeholder="Fecha de Inicio">
+        <input type="Date"   id="RdevolutionDate" placeholder="Fecha devolucion">
+        <input type="text"   id="Rstatus"     placeholder="Estado">  
+        <input type="number" id="RidClient"   placeholder="Cliente">  
+        <input type="number" id="RidCategory" placeholder="Categoria">  
+    </div>
+<button onclick="guardarInformacionReservas()">Guardar Reservas </button>
+
+<h1>Mensajes</h1>
+<div id="resultado5"></div>
+<button onclick="traerInformacionMensajes()" > Consultar Mensajes</button>
+    <div>
+        <input type="text"   id="MmessageText" placeholder="Mensaje">  
+        </div>
+<button onclick="guardarInformacionMensajes()">Guardar Mensajes </button>
+
+           
+</body>
+</html>
